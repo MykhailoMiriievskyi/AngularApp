@@ -1,0 +1,27 @@
+$font-main: 'Raleway',
+sans-serif;
+$font-secondary: 'Montserrat',
+sans-serif;
+
+.auth {
+  width: 40rem;
+  font-family: $font-main;
+  border: 2px solid white;
+  border-radius: 5px;
+  color: white;
+
+  &__header {
+    text-align: center;
+    padding: 2rem 0;
+    font-size: 3rem;
+    letter-spacing: 3px;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.15);
+  }
+  &__tittle-main {
+    font-weight: 800;
+    color:rgba(255, 255, 255, 0.5);
+  }
+  &__tittle-last {
+    font-weight: 200;
+  }
+}

@@ -1,0 +1,96 @@
+$font-main: 'Raleway',
+sans-serif;
+$font-secondary: 'Montserrat',
+sans-serif;
+
+
+
+
+.login {
+  font-family: $font-secondary;
+
+  &__text {
+    text-align: center;
+    margin-top: 20px;
+    color: rgba(255, 255, 255, 0.5);
+    font-weight: 600;
+    & a {
+      color: red;
+      font-weight: 400;
+    }
+  }
+
+  & form {
+    padding: 30px;
+    text-align: center;
+
+    & .has-error {
+      color: red;
+      text-align: left;
+      font-size: 1.2rem;
+    }
+
+    & .form-group {
+      text-align: left;
+      font-size: 1.4rem;
+      margin-bottom: 2rem;
+      padding: 0;
+
+      & button {
+        width: 100%;
+        height: 4.6rem;
+        border-radius: 2px;
+        background-color: #e84545;
+        border: none;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        font-family: $font-secondary;
+        font-size: 1.3rem;
+        font-weight: 600;
+        line-height: 1.62;
+        outline: none;
+        cursor: pointer;
+        position: relative;
+        z-index: 0;
+        overflow: hidden;
+        transition: all 0.4s;
+        color: #ffffff;
+        text-transform: uppercase;
+
+        &::before {
+          content: '';
+          position: absolute;
+          top: 50%;
+          left: 0;
+          width: 100%;
+          height: 0;
+          background-color: #fff;
+          z-index: -1;
+          transition: all .4s;
+        }
+        &:hover {
+          color: #e7434e;
+        }
+        &:hover::before {
+          top: 0;
+          height: 100%;
+        }
+      }
+    }
+  }
+
+  & form input {
+    outline: 0;
+    background: #f2f2f2;
+    width: 100%;
+    border: 0;
+    margin: 0 0 15px;
+    padding: 15px;
+    font-size: 14px;
+    border-radius: 2px;
+    &.ng-touched.ng-invalid{
+      border: 1px solid red;
+     }
+  }
+}
